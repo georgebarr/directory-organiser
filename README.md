@@ -43,6 +43,6 @@ This Python script categorises files in a given directory based on their file ty
 
 This project is licensed under the MIT Licence. See the [LICENCE](https://github.com/georgebarr/directory-organiser/blob/main/LICENSE) file for more details.
 
----
+## Contributions, Issues and Forking
 
-Feel free to contribute, report issues, or fork this project to tailor it to your needs. Happy organising!
+Feel free to contribute, report issues, or fork this project to tailor it to your needs.
