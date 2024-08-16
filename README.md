@@ -32,9 +32,11 @@ This Python script categorises files in a given directory based on their file ty
     ```
 
 4. **Input the path of the directory you wish to organise**:
-    ```What is your directory path?: ```
+    ```
+    What is your directory path?:
+    ```
 
-5. **Check the organised files**:
+6. **Check the organised files**:
     - Check the specified directory. You will find new folders like **Images**, **Documents**, **Videos**, **Code**, **Design Files**, **Music**, and **Miscellaneous**, with the respective files sorted into them.
 
 ## Licence
