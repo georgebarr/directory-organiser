@@ -65,4 +65,4 @@ if __name__ == "__main__":
 
     else:
 
-        print("Invalid input. You must enter a directory.")
+        print("Invalid input. You must enter the path to an existing directory.")
