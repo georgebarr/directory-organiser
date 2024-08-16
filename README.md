@@ -1,4 +1,4 @@
-# File Organiser Script
+# Directory Organiser Script
 
 ## Overview
 
