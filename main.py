@@ -24,13 +24,23 @@ def categorise_file(file: Path, directory: str) -> None:
         if file.suffix.lower() in extensions:
 
             dest_dir = Path(directory) / folder
+
             break
 
-    if file.name in dest_dir:
-        pass
-
     makedirs(dest_dir, exist_ok=True)  # Create the directory if it doesn't exist
-    move(str(file), str(dest_dir / file.name))  # Move the file
+
+    unique_file_path = dest_dir / file.name
+    count = 1
+
+    # Check if the file with the same name already exists
+    while unique_file_path.exists():
+
+        # Create a new file name by appending an incrementing counter
+        unique_file_path = dest_dir / f"{file.stem}_{count}{file.suffix}"
+
+        count += 1
+
+    move(str(file), str(unique_file_path))  # Move the file to the unique file path
 
 
 def main(directory: Path) -> None:
