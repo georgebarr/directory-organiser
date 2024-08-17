@@ -7,8 +7,6 @@ from file_extensions import code, design_files, documents, images, music, videos
 
 def categorise_file(file: Path, directory: str) -> None:
 
-    file_extension = file.suffix.lower()  # Get the file extension
-
     extension_mapping = {
         "Images": images,
         "Videos": videos,
@@ -23,10 +21,13 @@ def categorise_file(file: Path, directory: str) -> None:
 
     for folder, extensions in extension_mapping.items():
 
-        if file_extension in extensions:
+        if file.suffix.lower() in extensions:
 
             dest_dir = Path(directory) / folder
             break
+
+    if file.name in dest_dir:
+        pass
 
     makedirs(dest_dir, exist_ok=True)  # Create the directory if it doesn't exist
     move(str(file), str(dest_dir / file.name))  # Move the file
