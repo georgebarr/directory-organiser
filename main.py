@@ -7,35 +7,26 @@ from file_extensions import code, design_files, documents, images, music, videos
 
 def categorise_file(file: Path, directory: str) -> None:
 
-    file_extension = file.suffix  # Get the file extension
+    file_extension = file.suffix.lower()  # Get the file extension
 
-    if file_extension in images:
+    extension_mapping = {
+        "Images": images,
+        "Videos": videos,
+        "Music": music,
+        "Documents": documents,
+        "Code": code,
+        "Design Files": design_files,
+    }
 
-        dest_dir = Path(directory) / "Images"
+    # Default directory folder if there is no match found
+    dest_dir = Path(directory) / "Miscellaneous"
 
-    elif file_extension in videos:
+    for folder, extensions in extension_mapping.items():
 
-        dest_dir = Path(directory) / "Videos"
+        if file_extension in extensions:
 
-    elif file_extension in music:
-
-        dest_dir = Path(directory) / "Music"
-
-    elif file_extension in documents:
-
-        dest_dir = Path(directory) / "Documents"
-
-    elif file_extension in code:
-
-        dest_dir = Path(directory) / "Code"
-
-    elif file_extension in design_files:
-
-        dest_dir = Path(directory) / "Design Files"
-
-    else:
-
-        dest_dir = Path(directory) / "Miscellaneous"
+            dest_dir = Path(directory) / folder
+            break
 
     makedirs(dest_dir, exist_ok=True)  # Create the directory if it doesn't exist
     move(str(file), str(dest_dir / file.name))  # Move the file
