@@ -51,6 +51,8 @@ def main(directory: Path) -> None:
 
             categorise_file(file, str(directory))
 
+    print(f"Successful. {directory} has now been organised.")
+
 
 if __name__ == "__main__":
 
@@ -63,4 +65,4 @@ if __name__ == "__main__":
 
     else:
 
-        print("Invalid input. You must enter the path to an existing directory.")
+        print(f"{dir_path} is not an existing directory.")
