@@ -36,11 +36,7 @@ def main(directory: Path) -> None:
 
     for file in directory.iterdir():
 
-        if file.is_dir():
-
-            pass
-
-        else:
+        if file.is_file():
 
             categorise_file(file, str(directory))
 
