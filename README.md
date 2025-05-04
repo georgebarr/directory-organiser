@@ -18,7 +18,7 @@ This Python script categorises files in a given directory based on their file ty
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/georgebarr/directory-organiser.git
+    git clone https://github.com/rootbuses/directory-organiser.git
     ```
    
 2. **Navigate to the project directory**:
@@ -41,7 +41,7 @@ This Python script categorises files in a given directory based on their file ty
 
 ## Licence
 
-This project is licensed under the MIT Licence. See the [LICENCE](https://github.com/georgebarr/directory-organiser/blob/main/LICENSE) file for more details.
+This project is licensed under the MIT Licence. See the [LICENCE](https://github.com/rootbuses/directory-organiser/blob/main/LICENSE) file for more details.
 
 ## Contributions, Issues and Forking
 
