@@ -32,15 +32,15 @@ def categorise_file(file: Path, directory: str) -> None:
     unique_file_path = dest_dir / file.name
     count = 1
 
-    # Check if the file with the same name already exists
+    # Check if there is an existing file with the same name
     while unique_file_path.exists():
 
-        # Create a new file name by appending an incrementing counter
+        # Adds an incrementing counter to the file name
         unique_file_path = dest_dir / f"{file.stem}_{count}{file.suffix}"
 
         count += 1
 
-    move(str(file), str(unique_file_path))  # Move the file to the unique file path
+    move(str(file), str(unique_file_path))
 
 
 def main(directory: Path) -> None:
