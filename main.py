@@ -8,12 +8,12 @@ from file_extensions import code, design_files, documents, images, music, videos
 def categorise_file(file: Path, directory: str) -> None:
 
     extension_mapping = {
-        "Images": images,
-        "Videos": videos,
-        "Music": music,
-        "Documents": documents,
-        "Code": code,
-        "Design Files": design_files,
+        "Images": [".jpg", ".jpeg", ".png", ".gif", ".svg", ".tiff", ".bmp", ".webp"],
+        "Videos": [".mp4", ".mov", ".avi", ".mkv", "flv", ".wmv", ".webm"],
+        "Music": [".mp3", ".wav", ".flac", ".aac", ".ogg", ".m4a"],
+        "Documents": [".pdf", ".docx", ".doc", ".xlsx", ".xls", ".txt", ".rtf"],
+        "Code": [".py", ".c", ".js", ".css", ".html", ".java", ".xml", ".cpp", ".json"],
+        "Design Files": [".psd", ".ai", ".indd", ".sketch", ".blend", ".obj", ".fbx"],
     }
 
     # Default directory folder if there is no match found
