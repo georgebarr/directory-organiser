@@ -39,9 +39,9 @@ This Python script categorises files in a given directory based on their file ty
 6. **Check the organised files**:
     - Check the specified directory. You will find new folders like **Images**, **Documents**, **Videos**, **Code**, **Design Files**, **Music**, and **Miscellaneous**, with the respective files sorted into them.
 
-## Licence
+## License
 
-This project is licensed under the MIT Licence. See the [LICENCE](https://github.com/rootbuses/directory-organiser/blob/main/LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/rootbuses/directory-organiser/blob/main/LICENSE) file for more details.
 
 ## Contributions, Issues and Forking
 
