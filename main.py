@@ -2,8 +2,6 @@ from os import makedirs
 from pathlib import Path
 from shutil import move
 
-from file_extensions import code, design_files, documents, images, music, videos
-
 
 def categorise_file(file: Path, directory: str) -> None:
 
