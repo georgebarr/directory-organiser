@@ -33,7 +33,7 @@ This Python script categorises files in a given directory based on their file ty
 
 4. **Input the path of the directory you wish to organise**:
     ```
-    What is your directory path?:  $
+    What is your directory path?:
     ```
 
 6. **Check the organised files**:
