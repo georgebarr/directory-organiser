@@ -18,7 +18,7 @@ This Python script categorises files in a given directory based on their file ty
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/rootbuses/directory-organiser.git
+    git clone https://github.com/georgebarr/directory-organiser.git
     ```
    
 2. **Navigate to the project directory**:
